@@ -1,0 +1,28 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+
+    <!-- actions opening views on models -->
+
+
+    <!-- server action to the one above -->
+
+
+    <!-- Top menu item -->
+
+    <menuitem name="Claro" id="claro_base_menu" />
+
+    <!-- menu categories -->
+
+    <menuitem name="Tareas" id="task_menu" parent="claro_base_menu" action="claro_task_action" sequence="2"/>
+    <menuitem name="Certificados" id="sales_menu" parent="claro_base_menu" action="claro_sales_action" sequence="3"/>
+    <menuitem name="Pagos" id="payments_menu" parent="claro_base_menu" action="claro_payments_action"sequence="4"/>
+    <menuitem name="Ajustes" id="adjust_menu" parent="claro_base_menu" action="claro_payments_action"sequence="5"/>
+    <menuitem name="Supervisores" id="claro_supervisors" parent="adjust_menu" action="show_supervisors_action"sequence="1"/>
+    <menuitem name="Subcontratistas" id="supervisors" parent="adjust_menu" action="show_subcontratistas_action"sequence="2"/>
+   
+    <!-- actions -->
+
+  </data>
+</odoo>

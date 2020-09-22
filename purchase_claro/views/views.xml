@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/.list">
+      <field name="name">/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/ list</field>
+      <field name="model">/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/./home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/.action_window">
+      <field name="name">/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/ window</field>
+      <field name="res_model">/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/./home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/.action_server">
+      <field name="name">/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/ server</field>
+      <field name="model_id" ref="model_/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/_/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/" id="/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/.menu_1" parent="/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/.menu_root"/>
+    <menuitem name="Menu 2" id="/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/.menu_2" parent="/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/.menu_1_list" parent="/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/.menu_1"
+              action="/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/.action_window"/>
+    <menuitem name="Server to list" id="/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/" parent="/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/.menu_2"
+              action="/home/javo/odoo13/cusmod13/timsa_customization/purchase_timsa/.action_server"/>
+-->
+  </data>
+</odoo>

@@ -1,0 +1,3 @@
+<record id="claro_project_id" model="claro.project">
+    <field name="name">Gestion Claro</field>
+</record>
